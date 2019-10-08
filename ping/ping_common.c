@@ -537,8 +537,8 @@ void setup(struct ping_rts *rts, socket_st *sock)
 
 		it.it_interval.tv_sec = 0;
 		it.it_interval.tv_usec = 0;
-		it.it_value.tv_sec = rts->deadline;
-		it.it_value.tv_usec = 0;
+		it.it_value.tv_sec = rts->deadline/1000000;
+		it.it_value.tv_usec = rts->deadline%1000000;
 		setitimer(ITIMER_REAL, &it, NULL);
 	}
 
