@@ -41,7 +41,7 @@ option('BUILD_NINFOD', type : 'boolean', value : true,
 option('NINFOD_MESSAGES', type : 'boolean', value : true,
 	description : 'Enable ninfod syslog messages')
 
-option('BUILD_MANS', type : 'boolean', value : true,
+option('BUILD_MANS', type : 'boolean', value : false,
 	description : 'Build manuals')
 
 option('BUILD_HTML_MANS', type : 'boolean', value : false,
